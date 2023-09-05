@@ -13,28 +13,28 @@ Möchtest du die LOONY-TECH API für deinen Nightbot nutzen? Kein Problem! Hier 
 2. Klicke auf die Registerkarte "Commands" (Befehle), um benutzerdefinierte Befehle zu erstellen.
 
 3. **Lurk-Befehl**:
-   - Befehlsname: `lurk`
-   - Nachricht: `!lurk $(user) $(channel) https://api.loony-tech.de/nightbot/lurk?user=$(user)&channel=$(channel)`
+   - Befehlsname: `!lurk`
+   - Nachricht: `$(urlfetch https://api.loony-tech.de/nightbot/lurk?user=$(user)&channel=$(channel))`
    - Userlevel: Everyone (Jeder)
 
 4. **Reset-Lurk-Befehl**:
-   - Befehlsname: `resetlurk`
-   - Nachricht: `!resetlurk $(channel) https://api.loony-tech.de/nightbot/reset_lurk?channel=$(channel)`
+   - Befehlsname: `!resetlurk`
+   - Nachricht: `$(customapi https://api.loony-tech.de/nightbot/reset_lurk?channel=$(channel))`
    - Userlevel: Moderator (Moderator)
 
 5. **Back-Befehl**:
-   - Befehlsname: `back`
-   - Nachricht: `!back $(user) $(channel) https://api.loony-tech.de/nightbot/back?user=$(user)&channel=$(channel)`
+   - Befehlsname: `!back`
+   - Nachricht: `$(urlfetch https://api.loony-tech.de/nightbot/back?user=$(user)&channel=$(channel)`
    - Userlevel: Everyone (Jeder)
 
 6. **Randomnumber-Befehl**:
-   - Befehlsname: `randomnumber`
-   - Nachricht: `!randomnumber $(querystring) https://api.loony-tech.de/nightbot/random/number?min=$(1)&max=$(2)`
+   - Befehlsname: `!randomnumber`
+   - Nachricht: `$(urlfetch https://api.loony-tech.de/nightbot/random/number?user=$(user)&channel=$(channel)&min=1&max=150)`
    - Userlevel: Everyone (Jeder)
 
 7. **Twitchfollowage-Befehl**:
-   - Befehlsname: `twitchfollowage`
-   - Nachricht: `!twitchfollowage $(querystring) https://api.loony-tech.de/twitch/followage?user=$(1)&channel=$(2)`
+   - Befehlsname: `!twitchfollowage`
+   - Nachricht: `$(urlfetch https://api.loony-tech.de/twitch/followage?user=$(user)&channel=$(channel))`
    - Userlevel: Everyone (Jeder)
 
 **Hinweis**: Ersetze `[DEINE_API_URL]` durch die URL deiner eigenen API.
@@ -65,28 +65,28 @@ Would you like to use the LOONY-TECH API with your Nightbot? No problem! Here's 
 2. Click on the "Commands" tab to create custom commands.
 
 3. **Lurk Command**:
-   - Command Name: `lurk`
-   - Message: `!lurk $(user) $(channel) https://api.loony-tech.de/nightbot/lurk?user=$(user)&channel=$(channel)`
+   - Command Name: `!lurk`
+   - Message: `$(urlfetch https://api.loony-tech.de/nightbot/lurk?user=$(user)&channel=$(channel))`
    - Userlevel: Everyone
 
 4. **Reset Lurk Command**:
-   - Command Name: `resetlurk`
-   - Message: `!resetlurk $(channel) https://api.loony-tech.de/nightbot/reset_lurk?channel=$(channel)`
+   - Command Name: `!resetlurk`
+   - Message: `$(customapi https://api.loony-tech.de/nightbot/reset_lurk?channel=$(channel))`
    - Userlevel: Moderator
 
 5. **Back Command**:
-   - Command Name: `back`
-   - Message: `!back $(user) $(channel) https://api.loony-tech.de/nightbot/back?user=$(user)&channel=$(channel)`
+   - Command Name: `!back`
+   - Message: `$(urlfetch https://api.loony-tech.de/nightbot/back?user=$(user)&channel=$(channel)`
    - Userlevel: Everyone
 
 6. **Random Number Command**:
-   - Command Name: `randomnumber`
-   - Message: `!randomnumber $(querystring) https://api.loony-tech.de/nightbot/random/number?min=$(1)&max=$(2)`
+   - Command Name: `!randomnumber`
+   - Message: `$(urlfetch https://api.loony-tech.de/nightbot/random/number?user=$(user)&channel=$(channel)&min=1&max=150)`
    - Userlevel: Everyone
 
 7. **Twitch Followage Command**:
-   - Command Name: `twitchfollowage`
-   - Message: `!twitchfollowage $(querystring) https://api.loony-tech.de/twitch/followage?user=$(1)&channel=$(2)`
+   - Command Name: `!twitchfollowage`
+   - Message: `$(urlfetch https://api.loony-tech.de/twitch/followage?user=$(user)&channel=$(channel))`
    - Userlevel: Everyone
   
 **Step 2: Using Commands**
