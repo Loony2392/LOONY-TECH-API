@@ -86,3 +86,14 @@ Would you like to use the LOONY-TECH API with your Nightbot? No problem! Here's 
    - Command Name: `twitchfollowage`
    - Message: `!twitchfollowage $(querystring) [YOUR_API_URL]/twitch/followage?user=$(1)&channel=$(2)`
    - Userlevel: Everyone
+  
+**Step 2: Using Commands**
+
+Now you can use the LOONY-TECH API in your Nightbot commands to perform custom actions for your Twitch channel.
+
+### Example Usage:
+!lurk - Initiates lurk mode for the current user in the current channel.
+!resetlurk - Resets lurk data for the current channel (only available to moderators).
+!back - Indicates how long the user has been in lurk mode.
+!randomnumber 1 100 - Generates a random number between 1 and 100.
+!twitchfollowage Username ChannelName - Indicates how long a user has been following a channel.
